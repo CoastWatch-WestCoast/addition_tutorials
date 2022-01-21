@@ -224,6 +224,8 @@ Download and view four months of wind speed data from the ASCAT instrument on th
 
 <!--![Four months of wind speed data of Gulf of Alaska](../../../satellite-course-may2021/blob/master/.gitbook/assets/panoply_winds.png)-->
 
+---
+
 ## Tutorial 5. Vector Plots
 *Adapted by M. Abecassis from: http://davidburchnavigation.blogspot.com/2020/01/viewing-netcdf-weather-files-in-panoply.html*
 
