@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
 # NetCDF and Panoply tutorial  
 
 ## NetCDF <a id="netcdf"></a>
