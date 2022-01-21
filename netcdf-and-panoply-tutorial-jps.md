@@ -12,7 +12,6 @@ NetCDF (Network Common Data Form) is a file format for storing multidimensional 
 Many organizations and scientific groups in different countries have adopted netCDF as a standard way to represent scientific data.
 
 The NetCDF format has many advantages, the most important of which is that it is self-describing, meaning that software packages can directly read the data and determine its structure, the variable names and essential metadata such as the units. 
-
 This means that the information needed to ensure accurate work (reduce the incidence of errors) is available within the data itself (no need for additional files). Secondly, it means that different analysis software, like Matlab, R, Python or ArcGIS (among many others), have utilities to read and work with NetCDF files. Thirdly, plotting software (e.g. Ferret, Panoply, ncview) can directly read the netCDF files for visualization.
 
 ![Example of metadata and data within a NetDCF file](./netcdf_dims_vars_data.png)
@@ -41,43 +40,35 @@ Below are a few examples to try out to get you used to visualizing data with the
 
 ---
 
-## Example 1. Make a map of global chlorophyll a concentration <a id="example-1-make-a-map-of-global-chlorophyll-a-concentration"></a>
+## Tutorial 1. Make a map of global chlorophyll a concentration <a id="example-1-make-a-map-of-global-chlorophyll-a-concentration"></a>
 
 In this example you will download a netCDF file and open it in Panoply. You will learn how to view information about the dataset in the file metadata and create a plot of the data.
 
-### 1. Download a netCDF file  
-Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicking on the link below. The link will open in your default browser and begin the download for the March 2021 monthly chlorophyll product. 
+  **1. Download a netCDF file**  
 
-    [https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.nc?chlor_a[(2021-03-01T12:00:00Z)][(0.0)][(89.75625):(-89.75626)][(-179.9812):(179.9813)]&.draw=surface&.vars=longitude|latitude|chlor_a](https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.nc?chlor_a[%282021-03-01T12:00:00Z%29][%280.0%29][%2889.75625%29:%28-89.75626%29][%28-179.9812%29:%28179.9813%29]&.draw=surface&.vars=longitude|latitude|chlor_a)
+  Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicking on the link below. The link will open in your default browser and begin the download for the March 2021 monthly chlorophyll product. 
 
-### 2. Launch Panoply 
+  [https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.nc?chlor_a[(2021-03-01T12:00:00Z)][(0.0)][(89.75625):(-89.75626)][(-179.9812):(179.9813)]&.draw=surface&.vars=longitude|latitude|chlor_a](https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.nc?chlor_a[%282021-03-01T12:00:00Z%29][%280.0%29][%2889.75625%29:%28-89.75626%29][%28-179.9812%29:%28179.9813%29]&.draw=surface&.vars=longitude|latitude|chlor_a)
+
+**2. Launch Panoply**  
+
   For best performance, it is best to launch Panoply from your command prompt. When Panoply opens, it prompts you to open a file. Open the file you just downloaded.
 
 ![The Panoply v5.0 interface.](./panoply_ex1_dataset_main.png)
 
-### 3. View Dataset Metadata  
+**3. View Dataset Metadata**  
 
   On the left, Panoply will list the variables contained in the file (time, altitude, longitude, latitude, chlor_a). On the right, the file structure and metadata is displayed. You can scroll down to get more metadata details. In the global attributes, you will find:  
   
-  **platform**  
-  ```
-  This is data from the Suomi-NPP satellite
-  ```
+  **platform**  |  This is data from the Suomi-NPP satellite
+
   
-  **instrument**  
-  ``` 
-  VIIRS 
-  ``` 
+  **instrument**  | VIIRS 
+
+  **processing version**  |  2018.0
+
   
-  **processing version**  
-  ```
-  2018.0
-  ```
-  
-  **time coverage**  
-  ```
-  2002 to 2018
-  ```
+  **time coverage**  |  2002 to 2018
 
   **summary**  |  A brief description of the dataset
 
@@ -96,10 +87,9 @@ Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicki
 
   The metadata may also contain a Digital Object Identifier (DOI), which is a persistent identifier used to identify objects uniquely. It typically links to a webpage with extra information about the data. This dataset file doesn't have a DOI in the metadata. Metadata varies from file to file depending on how much information is provided by the person/institution who generated the file.
 
-### 4. Create a Custom Plot of the Chlorophyll Data
+**4. Create a Custom Plot of the Chlorophyll Data**  
 
-
-**1. Create a default plot**  
+**First, Create a default plot**  
 
   * On the left side of the screen, double click on the `chlor_a` variable. 
   * Keep the default settings and click **Create** 
@@ -108,13 +98,13 @@ Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicki
 ![Panoply generated image of the chlorophyll data contained in the netCDF file](./panoply_ex1_plot_default.png)  
 
 
-**2. View the Data Values**  
+**View the Data Values**  
 
   * Above the image there are tabs, click on the **Array 1** tab. 
   * This shows you the values of chlorophyll concentration for each longitude/latitude pixel.
 
 
-**3. Adjust the scale**  
+**Adjust the scale**  
 
   * Click back to the the **Plot** tab.   
   * From the Panoply menu bar, click on **Window** and select **Scale**. 
@@ -126,7 +116,7 @@ Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicki
   
   >You can download additional color palettes from:   [https://www.giss.nasa.gov/tools/panoply/colorbars/](https://www.giss.nasa.gov/tools/panoply/colorbars/) 
     
-**4. Adjust the Map Projection**  
+**Adjust the Map Projection**  
 
   * From the Panoply menu bar, click on **Window** and select **Map Projection**
   * A window will open with settings for the map projection. You can drag this to the side of your plot.
@@ -134,13 +124,13 @@ Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicki
   * Change **Center on: Lon.** value to `180º` to center the map on the Pacific.
   * Change **Grid: style** to `none` if you want to remove the longitude/latitude grid.
   
-**5. Adjust the Plot Labels**  
+**Adjust the Plot Labels**  
 
   * From the Panoply menu bar, click on **Window** and select **Labels**
   * Uncheck the **Center footnote** box.
   * Edit the Title to “VIIRS SNPP Chlorophyll Concentration, March 2021”
   
-**6. Save the Plot**  
+**Save the Plot**  
 
  * Save the image to your computer (File &gt; Save image).
 
@@ -150,7 +140,7 @@ Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicki
 
 ---
 
-## Example 2. Make a map of global SST <a id="example-2-make-a-map-of-global-sst"></a>
+## Tutorial 2. Make a map of global SST <a id="example-2-make-a-map-of-global-sst"></a>
 
 Download a global Sea Surface Temperature dataset from CoastWatch and create a map. This is a blended satellite data product which means it has data from multiple satellites. 
 
@@ -176,7 +166,7 @@ Download a global Sea Surface Temperature dataset from CoastWatch and create a m
 
 ---
 
-## Example 3. Zooming to a Region <a id="example-3-zooming-in-on-a-region"></a>
+## Tutorial 3. Zooming to a Region <a id="example-3-zooming-in-on-a-region"></a>
 
 1. Close any windows showing maps.
 
@@ -209,7 +199,7 @@ Download a global Sea Surface Temperature dataset from CoastWatch and create a m
 
 ---
 
-## 4. Files with multiple time steps <a id="files-with-multiple-time-steps"></a>
+## Tutorial 4. Files with multiple time steps <a id="files-with-multiple-time-steps"></a>
 
 Download and view four months of wind speed data from the ASCAT instrument on the MetOps satellite for the Alaska region from September to December, 2020.
 
@@ -234,7 +224,7 @@ Download and view four months of wind speed data from the ASCAT instrument on th
 
 <!--![Four months of wind speed data of Gulf of Alaska](../../../satellite-course-may2021/blob/master/.gitbook/assets/panoply_winds.png)-->
 
-## 5. Vector Plots
+## Tutorial 5. Vector Plots
 *Adapted by M. Abecassis from: http://davidburchnavigation.blogspot.com/2020/01/viewing-netcdf-weather-files-in-panoply.html*
 
 Look at wind data and create a plot with a color map for wind speed values and arrows for wind direction. 
