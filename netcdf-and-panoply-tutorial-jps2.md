@@ -87,12 +87,10 @@ In this example you will download a netCDF file and open it in Panoply. You will
   
   * **platform**  |  This is data from the Suomi-NPP satellite
 
-  
   * **instrument**  | VIIRS 
 
   * **processing version**  |  2018.0
 
-  
   * **time coverage**  |  2002 to 2018
 
   * **summary**  |  A brief description of the dataset
@@ -121,6 +119,7 @@ In this example you will download a netCDF file and open it in Panoply. You will
   * Keep the default settings and click **Create** 
   * This will take a minute, it’s a big file  
   <br>
+  
   ![Panoply generated image of the chlorophyll data contained in the netCDF file](./panoply_ex1_plot_default.png)  
 
 <br>
