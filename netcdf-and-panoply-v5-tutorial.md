@@ -2,7 +2,7 @@
 
 NOAA CoastWatch, Jan 2022
 
-In this tutorial you will learn how to use Panoply software to open and view netCDF data. This tutorial uses Panoply v5.0.0, released Jan 2022. If you have an older version of Panoply, see our previous tutorial [NetCDF and Panoply v4.x](https://coastwatch.gitbook.io/satellite-course/tutorials/netcdf-and-panoply-tutorial)
+In this tutorial you will learn how to use Panoply software to open and view netCDF data. This tutorial uses Panoply v5.0.0, released Jan 2022. If you have an older version of Panoply, see our previous tutorial [NetCDF and Panoply v4.x](https://github.com/CoastWatch-WestCoast/addition_tutorials/blob/main/netcdf-and-panoply-tutorial.md)
 <br>
 
 ## Table of Contents
