@@ -132,7 +132,6 @@ In this example you will download a netCDF file and open it in Panoply. You will
   
 
 
-
 * **Adjust the scale**  
 
   * Click back to the the **Plot** tab.   
@@ -214,6 +213,7 @@ Download a global Sea Surface Temperature dataset from CoastWatch and create a m
     
 
     ![](./panoply_sst_custom_plot.png)
+
 <br>
 
 ---
@@ -250,6 +250,7 @@ Download a global Sea Surface Temperature dataset from CoastWatch and create a m
     * Save to your computer.
 
 ![](./panoply_zoom.png)
+
 <br><br>
 
 ---
@@ -279,8 +280,10 @@ Download and view four months of wind speed data from the ASCAT instrument on th
   
     * Try repeatedly clicking on the up arrow next to "Centered time" to animate the Gulf of Alaska entering the windy season. 
 
-![](./panoply_multiple_time_steps.png)
-<br>  
+  ![](./panoply_multiple_time_steps.png)
+
+  <br>  
+
 6. Export an animation  
 
   * Go to File > Export Animation  
@@ -299,24 +302,29 @@ Download and view four months of wind speed data from the ASCAT instrument on th
 <br>
 
 ## Tutorial 5. Vector Plots <a id="example-5"></a>
+
 *Adapted by M. Abecassis from: http://davidburchnavigation.blogspot.com/2020/01/viewing-netcdf-weather-files-in-panoply.html*
 
 Look at wind data and create a plot with a color map for wind speed values and arrows for wind direction. 
 
 <br>
-**1. Download netCDF wind data **  
+
+**1. Download netCDF wind data**  
     
-  The following link will download a 45MB netCDF file 
+  * The following link will download a 45MB netCDF file 
     
-  https://oceanwatch.pifsc.noaa.gov/files/hawaii2020/CCMP_RT_Wind_Analysis_20210122_V02.1_L3.0_RSS.nc
+    https://oceanwatch.pifsc.noaa.gov/files/hawaii2020/CCMP_RT_Wind_Analysis_20210122_V02.1_L3.0_RSS.nc
   
 <br>
+
 **2. Open the netCDF file in Panoply**  
 
   You can see there are two main variables: 
   * uwnd- the east-west component of the wind speed vectors
   * vwnd - the north-south component  
-   <br> 
+   
+<br> 
+
 **3. Create a Vector Plot**  
 
  * Double-click on `uwnd` and click **Create** 
@@ -327,8 +335,10 @@ Look at wind data and create a plot with a color map for wind speed values and a
 
   * When prompted to choose which plot to combine with, select uwnd and click on **combine**. 
   
-  <br>
+<br>
+
 ![](./panoply_vectors_combine_plot.png)
+
 <br><br>
 
   * You will now have two data arrays in the same window, but you need to generate the vectors.
@@ -340,7 +350,9 @@ Look at wind data and create a plot with a color map for wind speed values and a
   * You now have a vector plot!  
   
   <br>
+
   ![](./panoply_vectors_plot.png)  
+
   <br>  
   
 **4. Customize Your Plot**  
