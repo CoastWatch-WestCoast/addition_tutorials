@@ -3,8 +3,9 @@
 NOAA CoastWatch, Jan 2022
 
 In this tutorial you will use Panoply software to open and view netCDF data. This tutorial uses Panoply v5.0.0, released Jan 2022. If you have an older version of Panoply, see our previous tutorial [NetCDF and Panoply v4.x](https://www.unidata.ucar.edu/software/netcdf/docs/netcdf_introduction.html)
-
 <br>
+
+## Table of Contents
 
 [NetCDF](#netcdf)  
 [Panoply](#nasa-panoply)  
@@ -63,7 +64,7 @@ Below are a few examples to try out to get you used to visualizing data with the
 
 In this example you will download a netCDF file and open it in Panoply. You will learn how to view information about the dataset in the file metadata and create a plot of the data.
 
-  **1. Download a netCDF file**  
+**1. Download a netCDF file**  
 
   * Download data from the NOAA VIIRS, Science Quality Chlorophyll dataset by clicking on the link below. 
   * The link will open in your default browser and begin the download for the March 2021 monthly chlorophyll product. 
@@ -98,13 +99,12 @@ In this example you will download a netCDF file and open it in Panoply. You will
 
     ```
     summary = Level-3 Standard Mapped Image (SMI), Global, 4km, Chlorophyll, Monthly composite data from the Visible and Infrared Imager/Radiometer Suite (VIIRS). These are science quality data with a 15-day latency. The data, processed by the NOAA/STAR Ocean Color Team, are produced from MSL12 v1.2 using OC-SDR v04 and were release by CoastWatch as of 2017-08-07. VIIRS is a multi-disciplinary instrument that flies on the Suomi-NPP (National Polar-orbiting Partnership) satellite and is the successor to MODIS. Suomi-NPP is the initial spacecraft in the JPSS (Joint Polar Satellite Systems) series of spacecraft. JPSS is our Nation's next generation polar-orbiting operational environmental satellite system. JPSS is a collaborative program between NOAA and its acquisition agent NASA.
-  ```
+    ```
 
   * **License**  |  How the data may be used and how the acknowledge the data provider.
 
     ```
-    license = [https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/\nThe)   
-  The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies. Neither the data\nContributor, ERD, NOAA, nor the United States Government, nor any of their employees or contractors, makes any warranty, express or implied, including warranties of merchantability and fitness for a particular purpose, or assumes any legal liability for the accuracy, completeness, or usefulness, of this information. Please acknowledge the use of these data with the following statement: "These data were provided by NOAA\'s Center for Satellite Applications & Research (STAR) and the CoastWatch program and distributed by NOAA/NMFS/SWFSC/ERD.\" To reference these data as a citation in a paper, please follow the instructions in the license and at this link: [https://coastwatch.pfeg.noaa.gov/erddap/information.html\#citeDataset](https://coastwatch.pfeg.noaa.gov/erddap/information.html#citeDataset)"
+    license = [https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/\nThe) The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies. Neither the data\nContributor, ERD, NOAA, nor the United States Government, nor any of their employees or contractors, makes any warranty, express or implied, including warranties of merchantability and fitness for a particular purpose, or assumes any legal liability for the accuracy, completeness, or usefulness, of this information. Please acknowledge the use of these data with the following statement: "These data were provided by NOAA\'s Center for Satellite Applications & Research (STAR) and the CoastWatch program and distributed by NOAA/NMFS/SWFSC/ERD.\" To reference these data as a citation in a paper, please follow the instructions in the license and at this link: [https://coastwatch.pfeg.noaa.gov/erddap/information.html\#citeDataset](https://coastwatch.pfeg.noaa.gov/erddap/information.html#citeDataset)"
     ```
 
   * **Digital Object Identifier (DOI)**
